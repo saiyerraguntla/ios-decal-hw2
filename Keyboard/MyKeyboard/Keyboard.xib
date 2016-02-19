@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardViewController" customModule="MyKeyboard" customModuleProvider="target">
+            <connections>
+                <outlet property="deleteButton" destination="tfs-RM-P9S" id="6a4-AN-iqt"/>
+                <outlet property="happyObama" destination="zM8-eP-2tm" id="hZD-hP-QQd"/>
+                <outlet property="nextKeyboardButton" destination="uai-oj-cC4" id="mi9-jR-WMJ"/>
+                <outlet property="returnButton" destination="rda-9Q-AUP" id="J3E-4t-eCE"/>
+                <outlet property="unimpressedObama" destination="EpU-nG-7QK" id="2js-rc-BNR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uai-oj-cC4">
+                    <rect key="frame" x="53" y="157" width="95" height="30"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                    <state key="normal" title="Exit Keyboard">
+                        <color key="titleColor" red="1" green="0.0071618298507417633" blue="0.1145061060602236" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EpU-nG-7QK" userLabel="UnimpressedObama">
+                    <rect key="frame" x="213" y="27" width="145" height="122"/>
+                    <state key="normal" image="img2.jpg"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zM8-eP-2tm" userLabel="GoodObama">
+                    <rect key="frame" x="8" y="29" width="185" height="118"/>
+                    <state key="normal" image="img1.jpeg"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfs-RM-P9S">
+                    <rect key="frame" x="305" y="157" width="45" height="30"/>
+                    <state key="normal" title="Delete">
+                        <color key="titleColor" red="1" green="0.0071618298510000003" blue="0.1145061061" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rda-9Q-AUP">
+                    <rect key="frame" x="234" y="157" width="46" height="30"/>
+                    <state key="normal" title="Return">
+                        <color key="titleColor" red="1" green="0.0071618298510000003" blue="0.1145061061" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.027581722064454306" green="0.48961643852582482" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="tfs-RM-P9S" secondAttribute="bottom" constant="13" id="DUi-Pl-iTK"/>
+                <constraint firstAttribute="bottom" secondItem="uai-oj-cC4" secondAttribute="bottom" constant="13" id="JQW-1h-Nfm"/>
+                <constraint firstAttribute="bottom" secondItem="rda-9Q-AUP" secondAttribute="bottom" constant="13" id="MsS-m1-1v6"/>
+                <constraint firstItem="uai-oj-cC4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="53" id="P9M-ZE-AcN"/>
+                <constraint firstAttribute="trailing" secondItem="tfs-RM-P9S" secondAttribute="trailing" constant="25" id="RJN-3c-Fcl"/>
+                <constraint firstAttribute="bottom" secondItem="zM8-eP-2tm" secondAttribute="bottom" constant="53" id="dCs-if-dtb"/>
+                <constraint firstItem="EpU-nG-7QK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="27" id="lsc-aN-8Y2"/>
+                <constraint firstItem="zM8-eP-2tm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="nqk-Ij-5pA"/>
+                <constraint firstAttribute="trailing" secondItem="rda-9Q-AUP" secondAttribute="trailing" constant="95" id="u7u-3k-MBL"/>
+                <constraint firstAttribute="trailing" secondItem="EpU-nG-7QK" secondAttribute="trailing" constant="17" id="zhf-lD-RvL"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="258.5" y="316"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="img1.jpeg" width="576" height="324"/>
+        <image name="img2.jpg" width="373" height="313"/>
+    </resources>
+</document>
